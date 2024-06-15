@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+#root,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.background {
+  background-color: #FAFAFA;
+}
+
+.light-bg {
+  background-image: url('/assets/bg-mobile-light.jpg');
+}
+
+.dark-bg {
+  background-image: url('/assets/bg-mobile-dark.jpg');
+}
+
+.dark-color {
+  background-color: #171823;
+}
+
+.light-color {
+  background-color: #FAFAFA;
+}
+
+@media (min-width: 48em) {
+  .delete-button {
+    visibility: hidden;
+  }
+
+  li:hover .delete-button {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 64em) {
+  .light-bg {
+    background-image: url('/assets/bg-desktop-light.jpg');
+  }
+
+  .dark-bg {
+    background-image: url('/assets/bg-desktop-dark.jpg');
+  }
+}
